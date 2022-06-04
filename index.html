@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--Pyscript-->
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>Pyscript: Text Count</title>
+</head>
+<body>
+    <div class="container-sm mt-10">
+        <h1 class="text-center fs-1 mb-10 text-uppercase">Pyscript Text Count</h1>
+        <p class="mb-4">The number of character you input is : <span id="output"></span></p>
+        
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="inputText" placeholder="Input your text ...">
+            <label for="inputText" class="ms-2">Text to count is?</label>
+        </div>
+
+        <div class="d-flex gap-2">
+            <button id="run" type="button" class="btn btn-primary" pys-onClick="count" style="width: 50%;">Count</button>
+            <button type="button" id="clear" class="btn btn-danger" pys-onClick="clear" style="width: 50%;">Clear</button>
+        </div>
+
+        <p class="mt-10 fs-6 fw-light text-center">Output from generated with Python.</p>
+    </div>
+    <py-script src="/testing.py"> </py-script>
+</body>
+</html>
