@@ -9,7 +9,7 @@ Well, this repository is basically a practice repository, you know Pyscript is a
 Well, it basically do the same this as JavaScript but with different syntax, here:
 <br>
 <code>
-inputText = Element("inputText")</code> well it does the same thing as <code>let inputText = document.getElementById('inputText');</code><br>
+inputText = Element("inputText")</code> it's the same thing as <code>let inputText = document.getElementById('inputText');</code><br>
 <br><br>
 
 ## Technologies and Libraries
